@@ -24,10 +24,10 @@
       <div :class="{ 'is-active': showMenu }" class="navbar-menu" id="main-menu">
         <div class="navbar-start"></div>
         <div class="navbar-end">
-          <a class="navbar-item" href="#home" data-scrollspy="#home">{{ $t('main_menu.home') }}</a>
-          <a class="navbar-item" href="#key-features" data-scrollspy="#key-features">{{ $t('main_menu.key_features') }}</a>
-          <a class="navbar-item" href="#creating" data-scrollspy="#creating">{{ $t('main_menu.creating') }}</a>
-          <a class="navbar-item" href="#managing" data-scrollspy="#managing">{{ $t('main_menu.managing') }}</a>
+          <a class="navbar-item active" href="#overview">{{ $t('main_menu.overview') }}</a>
+          <a class="navbar-item" href="#key-features">{{ $t('main_menu.key_features') }}</a>
+          <a class="navbar-item" href="#creating">{{ $t('main_menu.creating') }}</a>
+          <a class="navbar-item" href="#managing">{{ $t('main_menu.managing') }}</a>
 
           <div class="languages-menu dropdown" :class="{ 'is-active': showLanguagesList }">
             <div class="dropdown-trigger flex-center">
@@ -115,7 +115,7 @@
 
       scrollSpy('.viblo-navbar', {
         menuActiveTarget: '.navbar-item',
-        offset: 150
+        offset: 160
       })
     },
 
